@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "./styles";
-import Form from "../Form";
+import Form from "../Form/Form";
 
 function Todo() {
+  const [input, setInput] = useState("");
+
   return (
     <Container>
-      <p>Hello, this is the todo component</p>
+      <p>Hello, this is the todo </p>
 
-      <Form />
+      <Form input={input} setInput={setInput} />
 
       {/* To Do List  */}
 
